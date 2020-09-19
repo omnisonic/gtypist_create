@@ -1,0 +1,41 @@
+                                       List comprehensions
+Dictionaries store connections between pieces of information. 
+Each item in a dictionary is a key-value pair.
+           squares = [x**2 for x in range(1, 11)]
+       Slicing a list
+              finishers = ['sam', 'bob', 'ada', 'bea']
+first_two = finishers[:2]
+                 Variables are used to store values. 
+A string is a series of characters, 
+surrounded by single or double quotes.
+            Hello world
+Copying a list
+copy_of_bikes = bikes[:]
+dimensions = (1920, 1080)
+A simple dictionary
+ alien = {'color': 'green', 'points': 5}
+Accessing a value
+ print("The alien's color is " + alien['color'])
+Adding a new key-value pair
+ alien['x_position'] = 0
+Looping through all key-value pairs
+ fav_numbers = {'eric': 17, 'ever': 4}
+Looping through all keys
+Looping through all the values
+                           print("Hello world!")
+          Hello world with a variable
+Tuples are similar to lists, 
+but the items in a tuple can't be modified.
+    for name, number in fav_numbers.items():
+ print(name + ' loves ' + str(number))
+   msg = "Hello world!"
+print(msg)
+     Making a tuple
+             Concatenation (combining strings)
+             fav_numbers = {'eric': 17, 'ever': 4}
+for name in fav_numbers.keys():
+    print(name + ' loves a number')
+    first_name = 'albert'
+last_name = 'einstein'
+full_name = first_name + ' ' + last_name
+print(full_name)

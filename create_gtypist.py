@@ -1,0 +1,47 @@
+#filename = 'appended.txt'
+#with open(filename, 'w') as file_object:
+#    file_object.write(":")
+# This is a python program to create custom typing lesson for gtypist.
+# ---  source file and destination file must be different otherwise ends up blank
+# --- 
+
+prefix = ' :'
+source = '/Users/omnisonic/Documents/edu/code/practice/gtypist make lesson/source.txt'
+destination = '/usr/local/Cellar/gnu-typist/2.9.5_2/share/gtypist/custom_test.typ'
+
+# writes the ' :' before each line as needed by gtypist lessons
+with open(source, 'r') as src:
+    with open (destination, 'w') as dest:
+        for line in src:
+	        dest.write('%s%s\n' % (prefix, line.rstrip('\n')))
+# combine resulting file with filehead.txt as a new file
+
+# Python program to 
+# demonstrate merging 
+# of two files 
+  
+data = data2 = "" 
+  
+# Reading data from file1 
+with open('/Users/omnisonic/Documents/edu/code/practice/gtypist make lesson/filehead.txt') as fp: 
+    data = fp.read() 
+  
+# Reading data from file2 
+with open(destination) as fp: 
+    data2 = fp.read() 
+  
+# Merging 2 files 
+# To add the data of file2 
+# from next line 
+data += "\n"
+data += data2 
+  
+with open ('/usr/local/Cellar/gnu-typist/2.9.5_2/share/gtypist/file3.typ', 'w') as fp: 
+    fp.write(data) 
+
+f = open('/usr/local/Cellar/gnu-typist/2.9.5_2/share/gtypist/file3.typ', 'r+')
+f.truncate(2000)
+
+
+# notes for next session.  need to add a way to textwrap long lines so that 
+# they fit into gtypist window

@@ -1,0 +1,7 @@
+ :# The main menu
+ :*:MENU
+ :B:Name of the typing course
+ :M: "Menu of Lesson Series"
+ :here is a line
+ :here is another line
+ :what I want to do is append ':' to the beggining of each line

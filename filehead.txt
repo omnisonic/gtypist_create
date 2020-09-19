@@ -1,0 +1,36 @@
+# GNU Typist - improved typing tutor program for UNIX systems
+# Copyright (C) 1998  Simon Baldwin (simonb@sco.com)
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+# This lesson was written by John Clarke
+
+# ' :Lesson_Name' is how the lesson is navigated to 
+#    it looks for '*:Lesson_Name' and goes there when
+#    selected.
+# 'I: title of the lesson on the lesson page
+# 'S:' indicates the first line of the typing lesson.
+# '*:' indicates the link name to the lesson page
+# The main menu
+
+*:MENU
+B:Name of Course thats show up on the title bar
+M: "This course contains the following lessons:"
+ :Lesson_Name "name that shows up as a menu choice"
+
+*:Lesson_Name
+I: Lesson Page title
+S: start of the program 
+
+
