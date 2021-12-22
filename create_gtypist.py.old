@@ -9,6 +9,8 @@ prefix = ' :'
 source = '/Users/omnisonic/Documents/edu/code/practice/gtypist make lesson/source.txt'
 destination = '/usr/local/Cellar/gnu-typist/2.9.5_2/share/gtypist/custom_test.typ'
 
+ # current as of dec 2021 destination is /opt/homebrew/Cellar/gnu-typist/2.9.5_2/share/gtypist
+
 # writes the ' :' before each line as needed by gtypist lessons
 with open(source, 'r') as src:
     with open (destination, 'w') as dest:
